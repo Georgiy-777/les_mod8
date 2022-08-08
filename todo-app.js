@@ -72,6 +72,8 @@
         doneButton.textContent = 'Готово';
         deleteButton.classList.add('btn', 'btn-danger');
         deleteButton.textContent = 'Удалить';
+        
+        if(obj.done === true) item.classList.add('list-group-item-success')
 
         doneButton.addEventListener('click', function() {
             item.classList.toggle('list-group-item-success');
